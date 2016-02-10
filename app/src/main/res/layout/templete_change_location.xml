@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize">
+
+    <TextView
+        android:id="@+id/CC_countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Country"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        />
+
+    <CheckBox
+        android:id="@+id/CC_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

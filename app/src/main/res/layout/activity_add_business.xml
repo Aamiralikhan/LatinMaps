@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/res_back"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/arrow_back" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toRightOf="@+id/back"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Add Your Business" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                >
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/AAD_business_type"
+                    style="@style/Material.Widget.Spinner"
+                    android:layout_width="match_parent"
+                    android:dropDownWidth="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:spn_labelEnable="true"
+                    app:spn_label="select a category"
+                    app:spn_labelPadding="6dp"
+                    app:spn_labelTextSize="14dp"
+                    app:spn_labelTextColor="#787878"
+                    app:spn_dividerPadding="4dp"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="18dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_businessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Name"
+                        app:met_primaryColor="#ed1b3e"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_primary_contact_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Primary Contact Person"
+                        app:met_primaryColor="#ed1b3e"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:layout_centerHorizontal="true"
+                        android:theme="@style/custom">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/ADD_title_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Title/Position"
+                            android:singleLine="true"
+                            app:met_primaryColor="#ed1b3e"
+                            app:met_clearButton="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView"
+                        android:layout_centerHorizontal="true"
+                        android:theme="@style/custom">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/ADD_direct_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Direct Phone Number"
+                            app:met_primaryColor="#ed1b3e"
+                            android:singleLine="true"
+                            app:met_clearButton="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        app:met_primaryColor="#ed1b3e"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_business_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Website"
+                        app:met_primaryColor="#ed1b3e"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_business_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Address"
+                        app:met_primaryColor="#ed1b3e"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ADD_business_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Location"
+                        app:met_primaryColor="#ed1b3e"
+                        android:singleLine="true"
+                        android:editable="false"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/ADD_add_button"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="?android:actionBarSize"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Add Business"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:rd_backgroundColor="@color/colorAccent"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

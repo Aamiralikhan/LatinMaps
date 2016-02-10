@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/loginUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="9"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/LI_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        app:met_clearButton="true"
+                        app:met_iconLeft="@mipmap/user"
+                        app:met_iconPadding="2dp"
+                        app:met_primaryColor="#ed1b3e" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUser"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="9"
+                    android:theme="@style/custom">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/LI_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:password="true"
+                        android:singleLine="true"
+                        app:met_iconLeft="@mipmap/lock"
+                        app:met_iconPadding="2dp"
+                        app:met_primaryColor="#ed1b3e" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:layout_below="@id/loginPassword"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="?android:actionBarSize"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:rd_backgroundColor="@color/colorAccent"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/createNewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="#00ffffff"
+                android:text="create new account"
+                android:textAllCaps="false"
+                android:textColor="#7a7a7a"
+                android:textStyle="normal" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/forgotPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createNewAccount"
+                android:layout_centerHorizontal="true"
+                android:background="#00ffffff"
+                android:text="forgot password?"
+                android:textAllCaps="false"
+                android:textColor="#7a7a7a"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

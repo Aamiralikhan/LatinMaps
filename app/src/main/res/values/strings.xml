@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LatinMaps</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_categories">AllCategories</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="send_feedback">
+       Tell us what you think about this app or send us some recommendations about what should be
+        our next features. \nYour opinion is very important to us. \nThank you for using LatinMaps!
+
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

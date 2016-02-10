@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/SL_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#ed1b3e">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:text="Select Location"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/SL_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2.5"
+            android:background="#ed1b3e"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:text="Done"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-35dp"
+    >
+    <include layout="@layout/activity_maps" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="?android:actionBarSize"
+        app:backgroundTint="#ed1b3e"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/location"/>
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

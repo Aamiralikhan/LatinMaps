@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/SYF_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_toRightOf="@+id/SYF_back"
+                android:id="@+id/actionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:gravity="center_vertical"
+                android:text="Send Your Feedback"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/send_feedback"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameAndLastName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/custom">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/SYF_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your feedback"
+                app:met_primaryColor="#ed1b3e"
+                app:met_clearButton="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/SYF_send"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:rd_backgroundColor="@color/colorAccent"
+        app:rd_enable="true"
+        app:rd_rippleType="wave" />
+
+    </LinearLayout>

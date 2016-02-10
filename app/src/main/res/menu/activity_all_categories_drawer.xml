@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal_information"
+            android:icon="@mipmap/ic_bookmark_black_24dp"
+            android:title="Personal Information" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@mipmap/ic_star_black_24dp"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/nav_change_location"
+            android:icon="@mipmap/ic_location_on_black_24dp"
+            android:title="Change Location" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@mipmap/ic_feedback_black_24dp"
+            android:title="Send Your Feedback" />
+        <item
+            android:id="@+id/nav_latino_challenge"
+            android:icon="@mipmap/ic_feedback_black_24dp"
+            android:title="Latino Challenge" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@mipmap/ic_videocam_black_24dp"
+            android:title="Watch our video" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

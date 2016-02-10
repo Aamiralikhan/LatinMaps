@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#deffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_feedback"
+        />
+
+    <LinearLayout
+        android:id="@+id/loginUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:theme="@style/custom">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/DC_verifyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:hint="Code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_iconLeft="@mipmap/ic_code_black_24dp"
+                app:met_iconPadding="2dp"
+                app:met_primaryColor="#ed1b3e" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rey.material.widget.Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/code_entered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#00ffffff"
+            android:text="verify"
+            android:textAllCaps="false"
+            android:textColor="#7a7a7a"
+            app:rd_enable="true"
+            app:rd_backgroundColor="#ccc"
+            android:padding="6dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>
